@@ -28,7 +28,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 
 int main(int argc, char *argv[])
 {
-  ros::init(argc, argv, "teleop_twist_joy_node");
+  //ros::init(argc, argv, "teleop_twist_joy_node");
+  ros::init(argc,argv,"joy_to_veh");
 
   ros::NodeHandle nh(""), nh_param("~");
   teleop_twist_joy::TeleopTwistJoy joy_teleop(&nh, &nh_param);
