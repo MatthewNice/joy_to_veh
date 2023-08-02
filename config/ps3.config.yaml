@@ -1,9 +1,17 @@
 axis_linear: 1
-scale_linear: 0.7
+scale_linear: 5
 scale_linear_turbo: 1.5
 
-axis_angular: 0
-scale_angular: 0.4
+axis_angular: 2
+scale_angular: 2
 
-enable_button: 8  # L2 shoulder button
-enable_turbo_button: 10  # L1 shoulder button
+#axis_wheel_torque: 2
+
+
+enable_button: 6  # L2 shoulder button (7)
+enable_button_too: 7 #L2 shoulder button (8)
+enable_turbo_button: 10  #click left stick button
+
+minicar_button: 4 # labelled 5
+cancel_button: 0 # labelled 1
+
