@@ -187,7 +187,8 @@ void TeleopTwistJoy::Impl::sendCmdVelMsg(const sensor_msgs::Joy::ConstPtr& joy_m
   //cmd_vel_msg.angular.x = getVal(joy_msg, axis_angular_map, scale_angular_map[which_map], "roll");
 
 //  cmd_vel_pub.publish(cmd_vel_msg);
-  accel_input_pub.publish(accel_input_msg-0.75);
+  accel_input_msg.data -= 0.75;
+  accel_input_pub.publish(accel_input_msg);
   steer_tq_pub.publish(steer_tq_msg);
 
   minicar_pub.publish(minicar_msg);
