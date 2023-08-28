@@ -209,7 +209,7 @@ void TeleopTwistJoy::Impl::joyCallback(const sensor_msgs::Joy::ConstPtr& joy_msg
       // Initializes with zeros by default.
 //      geometry_msgs::Twist cmd_vel_msg;
       std_msgs::Float64 accel_input_msg;
-      accel_input_pub.data -= 0.75;
+      accel_input_msg.data -= 0.75;
       accel_input_pub.publish(accel_input_msg);
       sent_disable_msg = true;
     }
